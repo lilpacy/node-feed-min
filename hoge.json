@@ -1,0 +1,13 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Feed Title",
+    "home_page_url": "http://example.com/",
+    "feed_url": "https://example.com/json",
+    "description": "This is my personal feed!",
+    "icon": "http://example.com/image.png",
+    "author": {
+        "name": "John Doe",
+        "url": "https://example.com/johndoe"
+    },
+    "items": []
+}

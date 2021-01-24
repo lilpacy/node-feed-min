@@ -1,4 +1,5 @@
 const fd = require("feed");
+const fs = require("fs");
 
 const feed = new fd.Feed({
   title: "Feed Title",
@@ -21,6 +22,9 @@ const feed = new fd.Feed({
     link: "https://example.com/johndoe"
   }
 });
-console.log("rss2\n",feed.rss2(),"\n");
-console.log("atom1\n",feed.atom1(),"\n");
-console.log("json1\n",feed.json1(),"\n");
+
+fs.writeFileSync('hoge.rss',feed.rss2())
+fs.writeFileSync('hoge.atom',feed.atom1())
+fs.writeFileSync('hoge.json',feed.json1())
+
+//console.log(result);
